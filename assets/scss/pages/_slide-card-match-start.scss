@@ -11,18 +11,7 @@
   font-size: 12px;
   letter-spacing: 0%;
 }
-.mb-416 {
-  margin-bottom: 416px;
-}
-.mb-224 {
-  margin-bottom: 224px;
-}
-.mb-103 {
-  margin-bottom: 103px;
-}
-.mb-184 {
-  margin-bottom: 184px;
-}
+
 .slide-card-border {
   position: relative;
   border-radius: 24px; /* 想要的圓角 */
@@ -116,6 +105,7 @@
 
 .gradient-slide-card {
   background: linear-gradient(#ffe3fb, #890672);
+  height: 812px;
 }
 
 input::placeholder {
