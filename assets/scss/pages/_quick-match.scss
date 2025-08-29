@@ -1,0 +1,99 @@
+.container-y{
+    padding-top: 46px;
+    padding-bottom: 122px;
+}
+
+.bg-quickmatch-start{
+    background-image: url(/assets/images/06-Fast-match/2x/Fast-match-bg@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  top;
+
+}
+.bg-quickmatch-end{
+    background-image: url(/assets/images/06-Fast-match/2x/match-bg@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+
+}
+.img-quickmatch-start{
+    max-height: 324px;
+    width: auto;
+}
+.img-quickmatch-end{
+    max-height: 346px;
+    width: auto;
+}
+
+.statutag-quickmatch-start{
+    &::before{
+        content: "";
+        display: inline-block;
+        margin-right: 7px;
+        background: $success;
+        border-radius: $border-radius-xxl;
+        width: 10px;height: 10px;
+    }
+}
+.card-quickmatch-end{
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    height: 28%;
+    width: 100%;
+    background-color: transparentize($secondary-800, 0.5);
+    border-radius: 24px 24px 0 0;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 24px 24px 0 0;
+        background-image: linear-gradient( #FFD3D3, #EB93FF);
+        background-origin: border-box;
+        mask-image: linear-gradient(white, white), linear-gradient(white, white);
+        mask-composite: exclude, add;
+        mask-clip: padding-box, border-box;
+        
+        /* ... */
+    }
+}
+.btn-quickmatch-end{
+    position: relative;
+    z-index: 5;
+}
+@media (max-height:736px) {
+    .img-quickmatch-end{
+        max-height: 300px
+    }
+    .card-quickmatch-end{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        height: 28%;
+
+    }
+}
+
+@media (max-height:675px) {
+    .img-quickmatch-start{
+        max-height: 240px;
+    }
+    .img-quickmatch-end{
+        max-height: 250px;
+    }
+    .card-quickmatch-end{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 28%;
+
+    }
+    .mb-hxxs-5{
+        margin-bottom: 16px !important;
+    }
+    .pt-hxxs-6{
+        padding-top: 24px !important;
+    }
+}

@@ -1,0 +1,123 @@
+.bg-test-main{
+    background-image: url(/assets/images/04-SignUp-test-page/2x/Result-bg@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-test-quest{
+    background-image: url(/assets/images/05-Question-question-bg/2x/Question-bg@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:  0;
+
+}
+.badge-test-chatag{
+    padding: 6px 12px;
+ }
+.badge-test-compare{
+    padding: 1px 12px;
+    line-height: 1.5;
+}
+.card-test-compare{
+    position: relative;
+    padding: 15px;
+    border-radius: 24px;
+    background-color: transparentize($secondary-400, 0.7);
+    // height: 286px;
+    width: 100%;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 24px;
+        background-image: $gradient-color-closeLevel;
+        background-origin: border-box;
+        mask-image: linear-gradient(white, white), linear-gradient(white, white);
+        mask-composite: exclude, add;
+        mask-clip: padding-box, border-box;
+        
+        /* ... */
+    }
+}
+// .card-test-contect{
+//     background-color: transparentize($secondary-400, 0.7);
+//     border-radius: 24px;
+//     padding-top: 14px;
+//     padding-bottom: 14px;
+//     width: calc(100vw - 48px);
+//     // margin: 0 auto;
+    
+
+// }
+
+.img-test-result{
+    position: relative;
+    width: 153px;
+    height: auto;
+    display: inline-block;
+    // filter: drop-shadow(0px 0px 20px transparentize($secondary-200, 0.7));
+    img {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: 0;
+        // bottom: -5px;
+        left: 50%;
+        top:10%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 80%;
+        border-radius: 50%;
+        background: transparentize(#00eeff, 0.3);
+        filter: blur(25px); // 模糊成柔和陰影
+    }
+}
+.img-test-compare{
+    position: relative;
+    width: auto;
+    height: 85px;
+    img {
+        width: auto;
+        height: 100%;
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: 0;
+        bottom: -5px;
+        left: 50%;
+        top:10%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+        background: transparentize(#000000, 0.3);
+        filter: blur(25px); // 模糊成柔和陰影
+    }
+}
+.progress-bar{
+    border-radius: $border-radius-pill;
+}
+@media (max-height:675px){
+    .img-test-result{
+        width: 100px;
+    }
+    .img-test-compare{
+        height: 65px;
+    }
+    .badge-test-chatag{
+    padding: 2px 8px;
+ }
+    .card-test-compare{
+        padding: 8px;
+    }
+}
