@@ -56,7 +56,7 @@
                     src="/assets/images/08-icon/State=Default, icon=info.svg"
                     alt="" /></span
               ></span>
-              <span>0%</span>
+              <span>15%</span>
             </div>
             <div>
               <img
@@ -70,6 +70,19 @@
             <div class="d-flex justify-content-end align-items-center">
               <span class="chat-time me-3">19:23</span>
               <span class="chat-dialog-box-right"> 你好～</span>
+            </div>
+            <div>
+              <img
+                src="../../assets/images/07-Match-slide/2x/chatroom-list/Chatphoto-1@2x.png"
+                alt=""
+                width="38"
+              />
+              <span class="chat-dialog-box-left">你有養寵物嗎</span
+              ><span class="chat-time ms-3">19:23</span>
+            </div>
+            <div class="d-flex justify-content-end align-items-center">
+              <span class="chat-time me-3">19:23</span>
+              <span class="chat-dialog-box-right">沒有，但我想養貓咪</span>
             </div>
             <div class="nav-position w-100 px-5">
               <div class="nav-pills nav-bg py-3 px-5">
@@ -93,16 +106,20 @@
                       <input
                         type="text"
                         class="form-control bg-white rounded-pill text-black w-100"
-                        placeholder="傳送訊息..."
                       />
                     </div>
-                    <a href="chat-room-sarah-1.html"
-                      ><button type="button" class="btn border-0 p-0">
-                        <img
-                          src="../../assets/images/08-icon/State=Default, icon=send.svg"
-                          alt=""
-                        /></button
-                    ></a>
+
+                    <button
+                      type="button"
+                      class="btn border-0 p-0"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <img
+                        src="../../assets/images/08-icon/State=Default, icon=send.svg"
+                        alt=""
+                      />
+                    </button>
                   </div>
                 </form>
               </div>
@@ -111,6 +128,38 @@
         </section>
       </div>
     </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade close-hit"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="../../assets/images/07-Match-slide/2x/chatroom/popup-match 15@2x.png"
+              alt=""
+              class="w-100"
+            />
+            <a
+              href="chat-room-sarah-2.html"
+              class="btn chat-room-colse-btn mt-3"
+            >
+              <img
+                src="../../assets/images/08-icon/State=Default, icon=close.svg"
+                alt="close"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="../../main.js"></script>
   </body>
 </html>
