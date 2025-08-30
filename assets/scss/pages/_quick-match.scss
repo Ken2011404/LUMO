@@ -39,7 +39,6 @@
 .card-quickmatch-end{
     position: relative;
     padding-top: 35px;
-    padding-bottom: 35px;
     height: 28%;
     width: 100%;
     background-color: transparentize($secondary-800, 0.5);
@@ -71,7 +70,6 @@
     }
     .card-quickmatch-end{
         padding-top: 24px;
-        padding-bottom: 24px;
         height: 28%;
 
     }
@@ -86,7 +84,6 @@
     }
     .card-quickmatch-end{
         padding-top: 12px;
-        padding-bottom: 12px;
         height: 28%;
 
     }
@@ -96,4 +93,10 @@
     .pt-hxxs-6{
         padding-top: 24px !important;
     }
+}
+@media (min-width:576px) {
+    // .img-quickmatch-end{
+    // max-height: 290px;
+    
+    // }
 }
