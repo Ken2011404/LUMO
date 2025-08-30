@@ -54,11 +54,12 @@
 
 .img-test-result{
     position: relative;
-    width: 153px;
-    height: auto;
+    // width: 153px;
+    // height: auto;
     display: inline-block;
-    // filter: drop-shadow(0px 0px 20px transparentize($secondary-200, 0.7));
     img {
+        height: 200px;
+        width:  auto;
         display: block;
         position: relative;
         z-index: 2;
@@ -109,7 +110,9 @@
 }
 @media (max-height:675px){
     .img-test-result{
-        width: 100px;
+        img{
+            height: 150px;
+        }
     }
     .img-test-compare{
         height: 65px;
