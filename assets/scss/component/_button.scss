@@ -1,0 +1,36 @@
+.btn.link-underline-primary-100{
+    text-decoration: underline;
+}
+
+.btn-main{
+    background: $lg-pri;
+    border-radius: $border-radius-2xl;
+    padding: 8px 16px;
+    text-align: center;
+    color: $primary-50;
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.25);
+    &:active{
+        background: $lg-pri-act;
+        border:none;
+    }
+    cursor: pointer;
+}
+
+.btn.btn-outline-prima-cus{
+    border: 1px solid $primary-100;
+    color: $primary-50;
+    width: 100%;
+    &:hover{
+        border: 1px solid $primary-100;
+        background-color:transparentize($secondary-950,0.7) ;
+    }
+    &:active{
+        background-color: $primary-100;
+        color: $secondary-800;
+    }
+    .btn-check:checked + &{
+        background-color: $primary-100;
+        color: $secondary-800;
+        border: 1px solid $primary-100;
+    }
+}

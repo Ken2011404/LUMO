@@ -1,0 +1,16 @@
+.range-setup{
+    &::-webkit-slider-thumb {
+        background: $primary-50;
+        border: 2px solid $primary;
+    }
+    &::-webkit-slider-runnable-track {
+        background: $primary-100;
+    }
+    &::-moz-range-thumb {
+        background: $primary-50;
+        border: 1px solid $primary;
+    }
+    &::-moz-range-track {
+        background: $primary-100;
+    }
+}
