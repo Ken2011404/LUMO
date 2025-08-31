@@ -1,14 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@173&display=swap');
-@import 'bootstrap/scss/functions';
-@import './helpers/variables';
-
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@173&display=swap");
+@import "bootstrap/scss/functions";
+@import "./helpers/variables";
 
 @import "bootstrap/scss/bootstrap";
-
-
-
 
 @import "./helpers/utilities";
 @import "./helpers/color-gradient";
@@ -20,13 +14,12 @@
 @import "./pages/slide-card-match-start";
 @import "./pages/chat-room-list";
 
+@import "./pages/quick-match";
+@import "./pages/test";
+@import "./pages/setup";
+@import "./component/border";
+@import "./component/button";
+@import "./component/range";
+@import "./helpers/text";
 
-@import './pages/quick-match';
-@import './pages/test';
-@import './pages/setup';
-@import './component/border';
-@import './component/button';
-@import './component/range';
-@import './helpers/text';
-
-
+@import "./pages/personal";
