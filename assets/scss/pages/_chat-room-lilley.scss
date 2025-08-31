@@ -105,3 +105,21 @@
 .mb-18 {
   margin-bottom: 18px;
 }
+
+@media (min-width: 576px) {
+  .msg-position {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 46px;
+  }
+}
+.msg-position {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 46px;
+  padding-top: 10%;
+}
