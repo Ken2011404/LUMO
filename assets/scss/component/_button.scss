@@ -1,0 +1,84 @@
+.btn.link-underline-primary-100 {
+  text-decoration: underline;
+}
+
+.btn-main {
+  background: $lg-pri;
+  border-radius: $border-radius-2xl;
+  padding: 8px 16px;
+  text-align: center;
+  color: $primary-50;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.25);
+  &:active {
+    background: $lg-pri-act;
+    border: none;
+  }
+  cursor: pointer;
+}
+
+.btn.btn-outline-prima-cus {
+  border: 1px solid $primary-100;
+  color: $primary-50;
+  width: 100%;
+  &:hover {
+    border: 1px solid $primary-100;
+    background-color: transparentize($secondary-950, 0.7);
+  }
+  &:active {
+    background-color: $primary-100;
+    color: $secondary-800;
+  }
+  .btn-check:checked + & {
+    background-color: $primary-100;
+    color: $secondary-800;
+    border: 1px solid $primary-100;
+  }
+}
+
+//personal
+.bg-btn-primay {
+  // color: $primary-50;
+  text-align: center;
+  background: $lg-pri;
+  border: 0px;
+  &:active {
+    transform: translateY(4px);
+    border: 0px;
+  }
+  &:focus,
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(to right, rgba(255, 78, 223, 1), rgba(84, 47, 153, 1));
+  }
+  &:focus {
+    border: 2px solid rgba(255, 198, 246, 0.5);
+  }
+}
+.bg-btn-secondary {
+  color: $primary-50;
+  background: none;
+  text-align: center;
+  border: 1px solid $primary-100;
+  &:hover,
+  &:focus {
+    color: $secondary;
+    background: $primary-100;
+  }
+  &:active {
+    transform: translateY(4px);
+    border: 0px;
+  }
+  &:focus {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+}
+
+.btn-disabled-bg-color {
+  background-color: #c1bcbc66;
+  border: 0px;
+  cursor: not-allowed;
+}

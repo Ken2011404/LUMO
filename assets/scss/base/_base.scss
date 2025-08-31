@@ -1,0 +1,59 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 0;
+    overflow-x: hidden;
+  }
+
+  .app-wrapper {
+    width: 375px;
+    height: auto;
+    position: relative;
+  }
+  .app-wrapper::before {
+    content: "";
+    width: calc(100% + 28px);
+    height: calc(50% + 10px);
+    position: absolute;
+    bottom: calc(0%);
+    left: 50%;
+    z-index: 90;
+    transform: translate(-50%);
+    background-image: url("/assets/images/StatusBar/HomeIndicator.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    pointer-events: none;
+  }
+
+  .app-wrapper::after {
+    content: "";
+    width: calc(100% + 28px);
+    height: calc(50% + 10px);
+    position: absolute;
+    top: calc(0%);
+    left: 50%;
+    z-index: 90;
+    transform: translate(-50%);
+    background-image: url("/assets/images/StatusBar/iPhone\ 13.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    pointer-events: none;
+  }
+}
+
+.iphone13-py {
+  padding-top: 47px;
+  padding-bottom: 34px;
+}

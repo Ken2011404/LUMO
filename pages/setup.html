@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
+
+    <title>設定</title>
 </head>
-<body>
-    
+<body >
+    <div class="wrapper">
+        <div class="app-wrapper">
+            <div class="pt-sm-9 bg-base bg-lg-bg d-flex flex-column justify-content-between ">
+                <header >
+                    <div class="container">
+                        <div class="d-flex justify-content-between py-3">
+                            <h1 class="h6">設定</h1>
+                            <a href="./index.html">
+                                <img src="../assets/images/08-icon/State=Default, icon=close.svg" alt=""> 
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <main class="container flex-fill d-flex flex-column justify-content-evenly">
+                    <section>
+                        <h2 class="fs-6 fw-medium text-body-tertiary mb-3">交友篩選條件</h2>
+                        <form action="" class="d-flex flex-column gap-5">
+                            <div class="p-5 border-surface rounded-1">
+                                <div class="d-flex gap-3">
+                                    <p class="mb-3">顯示性別</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="search-gender-1" checked>
+                                        <label class="form-check-label" for="search-gender-1">
+                                            男性
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="search-gender-2">
+                                        <label class="form-check-label" for="search-gender-2">
+                                            女性
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="search-gender-3">
+                                        <label class="form-check-label" for="search-gender-3">
+                                            不限性別
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-5 border-surface rounded-1">
+                                <div class="mb-3">
+                                    <p >年齡</p>
+                                </div>
+                                <div id="price-slider">
+        
+                                </div>
+                            </div>
+                            <div class="p-5 border-surface rounded-1">
+                                <div class="mb-3 d-flex justify-content-between">
+                                    <label for="distance-range" class="form-label">最大距離範圍</label>
+                                    <output for="distance-range" id="rangeValue" aria-hidden="true"></output>
+                                </div>
+                                <div class="">
+                                    <input type="range" class="form-range range-setup" min="0" max="100" value="50" id="distance-range">
+                                </div>
+                                
+                            </div>
+                        </form>
+                            
+                    </section>
+                    <section class="">
+                        <h2 class="fs-6 fw-medium text-body-tertiary mb-3">應用設置</h2>
+                        <ul  class="d-flex flex-column gap-5">
+                            <li class="border-surface rounded-1">
+                                <a href="#" class="d-block py-3 px-4 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="link-primary-100">個人資料</span>
+                                        <img src="../assets/images/08-icon/State=Default, icon=right.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="border-surface rounded-1">
+                                <a href="#" class="d-block py-3 px-4 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="link-primary-100">在社群顯示的資料</span>
+                                        <img src="../assets/images/08-icon/State=Default, icon=right.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="border-surface rounded-1">
+                                <a href="./test/psychological-test-main.html" class="d-block py-3 px-4 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="link-primary-100">星球心理測驗</span>
+                                        <img src="../assets/images/08-icon/State=Default, icon=right.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="border-surface rounded-1">
+                                <a href="#" class="d-block py-3 px-4 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="link-primary-100">修改密碼</span>
+                                        <img src="../assets/images/08-icon/State=Default, icon=right.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    
+                </main>
+                <footer class="container d-grid mb-6">
+                    <a href="./welcome.html" class="btn-main rounded-pill">登出</a>
+                </footer>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<script type="module" src="../main.js"></script>
+<!-- -----------雙邊 滑桿------------ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+<script>
+    var slider = document.getElementById('price-slider');
+
+    noUiSlider.create(slider, {
+        start: [20, 30],
+        connect: true, // 讓兩個滑桿中間的區塊顯示顏色
+        range: {
+            'min': 1,
+            'max': 100
+        }
+    });
+</script>
+
 </body>
 </html>
