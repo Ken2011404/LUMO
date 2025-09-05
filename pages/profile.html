@@ -2,66 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css"
-    />
-    <title>index</title>
+    <title>個人檔案</title>
   </head>
   <body>
-    <main class="position-relative">
-      <div class="wrapper">
-        <div class="app-wrapper">
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-home"
-              role="tabpanel"
-              aria-labelledby="pills-home-tab"
-              tabindex="0"
-            >
-              <%- include('./layout/profile'); -%>
+    <main class="wrapper">
+      <div class="app-wrapper bg-base bg-home iphone13-py overflow-hidden">
+        <div class="container">
+          <section
+            class="d-flex justify-content-between align-items-center py-3 mb-6"
+          >
+            <h1 class="fs-5">個人檔案</h1>
+            <a href=""
+              ><span
+                ><img
+                  src="/assets/images/08-icon/State=Default, icon=setting.svg"
+                  alt="setting" /></span
+            ></a>
+          </section>
+          <section class="d-block">
+            <div class="position-relative">
+              <img
+                src="/assets/images/02-Home/1x/Home-Planet button.png"
+                alt="Home-Planet"
+                class="position-absolute home-planet"
+              />
+              <a
+                href="./personal/personal-info-moonaria.html"
+                class=".explore-border"
+                ><div
+                  class="explore explore-position d-block position-absolute"
+                >
+                  <span class="text-black rounded-xl explore-text"
+                    >探索星際</span
+                  >
+                </div></a
+              >
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-quick-match"
-              role="tabpanel"
-              aria-labelledby="pills-quick-match-tab"
-              tabindex="0"
-            >
-              <%- include('./layout/quick-match-start'); -%>
+          </section>
+          <section>
+            <div>
+              <img
+                src="/assets/images/03-Introduction-character/2x/cha-大/Introduction-Moonaria@2x.png"
+                alt=""
+                class="home-moon-img img-fluid d-block position-absolute start-50"
+              />
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-slide-card"
-              role="tabpanel"
-              aria-labelledby="pills-slide-card-tab"
-              tabindex="0"
+            <a href=""
+              ><div class="mission mission-position d-block position-absolute">
+                <span class="text-black rounded-xl mission-text"
+                  >解鎖每日任務</span
+                >
+              </div></a
             >
-              <%- include('./layout/slide-card-match-start'); -%>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-group-talk"
-              role="tabpanel"
-              aria-labelledby="pills-group-talk-tab"
-              tabindex="0"
-            >
-              <%- include('./layout/slide-card-match-start'); -%>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-chat-list"
-              role="tabpanel"
-              aria-labelledby="pills-chat-list-tab"
-              tabindex="0"
-            >
-              <%- include('./layout/chat-room-list'); -%>
-            </div>
-          </div>
-          <nav class="nav-position nav-container">
+          </section>
+          <!-- <nav class="nav-position nav-container">
             <ul class="nav nav-pills nav-bg" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
@@ -75,7 +70,7 @@
                   aria-selected="true"
                 >
                   <img
-                    src="../assets/images/09-nav icon/User.svg"
+                    src="/assets/images/09-nav icon/User.svg"
                     alt=""
                     class="mb-1"
                   />
@@ -93,10 +88,7 @@
                   aria-controls="pills-quick-match"
                   aria-selected="false"
                 >
-                  <img
-                    src="../assets/images/09-nav icon/fast match.svg"
-                    alt=""
-                  />
+                  <img src="/assets/images/09-nav icon/fast match.svg" alt="" />
                   <p class="mt-1">探索</p>
                 </button>
               </li>
@@ -111,7 +103,7 @@
                   aria-controls="pills-slide-card"
                   aria-selected="false"
                 >
-                  <img src="../assets/images/09-nav icon/match.svg" alt="" />
+                  <img src="/assets/images/09-nav icon/match.svg" alt="" />
                   <p class="mt-1">滑卡</p>
                 </button>
               </li>
@@ -126,10 +118,7 @@
                   aria-controls="pills-group-talk"
                   aria-selected="false"
                 >
-                  <img
-                    src="../assets/images/09-nav icon/community.svg"
-                    alt=""
-                  />
+                  <img src="/assets/images/09-nav icon/community.svg" alt="" />
                   <p class="mt-1">群聊</p>
                 </button>
               </li>
@@ -144,29 +133,15 @@
                   aria-controls="pills-chat-list"
                   aria-selected="false"
                 >
-                  <img src="../assets/images/09-nav icon/chat.svg" alt="" />
+                  <img src="/assets/images/09-nav icon/chat.svg" alt="" />
                   <p class="mt-1">聊天</p>
                 </button>
               </li>
             </ul>
-          </nav>
+          </nav> -->
         </div>
       </div>
     </main>
-
-    <script type="module" src="../main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
-    <script>
-      var slider = document.getElementById("price-slider");
-
-      noUiSlider.create(slider, {
-        start: [20, 30],
-        connect: true, // 讓兩個滑桿中間的區塊顯示顏色
-        range: {
-          min: 1,
-          max: 100,
-        },
-      });
-    </script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

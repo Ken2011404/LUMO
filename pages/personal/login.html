@@ -8,13 +8,17 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <main class="position-relative wrapper">
       <div class="app-wrapper bg-base bg-account iphone13-py">
         <div class="container">
           <section>
-            <a href="#"
+            <a href="./home.html"
               ><button
                 type="button"
                 class="btn border-0 p-0 d-flex justify-content-start my-3"
@@ -27,70 +31,150 @@
           </section>
         </div>
         <div class="px-5">
-          <section class="pt-6 text-center mb-391">
+          <section class="pt-6 text-center">
             <h1 class="fs-4 mb-3">使用手機號碼登入</h1>
             <p class="small mb-6">請輸入您的登入資料</p>
 
-            <div class="input-group mb-6 w-100">
-              <button
-                class="btn text-primary-300 btn-border border-end-0 pe-0"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span
-                  >+886
-                  <span
-                    class="material-icons-outlined align-bottom pe-3 border-end text-primary-300 border-primary-300"
-                  >
-                    arrow_drop_down
-                  </span></span
-                >
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">+886</a></li>
-                <li><a class="dropdown-item" href="#">+86</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">+123</a>
-                </li>
-                <li><a class="dropdown-item" href="#">+456</a></li>
-              </ul>
-              <input
-                type="text"
-                class="form-control btn-border border-start-0 text-primary-100 ps-4 shadow-none"
-                placeholder="請輸入手機號碼"
-                aria-label="Text input with dropdown button"
-                required
-              />
-            </div>
-            <div class="position-relative">
-              <input
-                type="text"
-                class="form-control btn-border text-primary-100 shadow-none"
-                placeholder="請輸入密碼"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-                required
-              />
-              <img
-                src="/assets/images/08-icon/State=Default, icon=eyeoff.svg"
-                alt="eyeoff"
-                class="position-absolute top-50 end-0 translate-middle-y me-5"
-              />
-            </div>
-          </section>
-          <a href="#">
-            <button
-              disabled
-              type="button"
-              class="text-primary-50 text-center w-100 rounded-pill py-3 mb-6 shadow-sm btn-disabled-bg-color"
+            <form
+              class="needs-validation"
+              novalidate
+              id="register_form"
+              role="form"
+              data-toggle="validator"
             >
-              繼續
-            </button>
-          </a>
+              <div class="mb-6 w-100 position-relative">
+                <span class="position-absolute start-0"
+                  ><button
+                    class="btn text-primary-300 pe-0"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span
+                      >+886
+                      <span
+                        class="material-icons-outlined align-bottom pe-3 border-end text-primary-300 border-primary-300"
+                      >
+                        arrow_drop_down
+                      </span></span
+                    >
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">+886</a></li>
+                    <li><a class="dropdown-item" href="#">+86</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">+123</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">+456</a></li>
+                  </ul></span
+                >
+                <input
+                  id="phonenumber"
+                  type="text"
+                  class="form-control btn-border text-primary-100 ps-4 shadow-none text-right"
+                  placeholder="請輸入手機號碼"
+                  aria-label="Text input with dropdown button"
+                  required
+                />
+                <!-- <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">請輸入手機號碼</div> -->
+              </div>
+              <div class="position-relative mb-391">
+                <input
+                  id="floatingPassword"
+                  type="password"
+                  class="form-control btn-border text-primary-100 shadow-none"
+                  placeholder="請輸入密碼"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+                <i
+                  id="checkEye"
+                  class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-5"
+                ></i>
+              </div>
+              <input
+                id="submit"
+                type="submit"
+                value="繼續"
+                class="btn btn-danger btn-block text-primary-50 text-center w-100 rounded-pill py-3 mb-6 shadow-sm"
+              />
+            </form>
+          </section>
         </div>
       </div>
     </main>
     <script type="module" src="../../main.js"></script>
+
+    <!-- TEST -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <!--引用 Validator-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+    <!--執行 Validator-->
+    <script>
+      // const confirmPasswordInput = document.getElementById("floatingPassword");
+      // confirmPasswordInput.addEventListener("input", convertToStars);
+      // alert()
+      // convertedValue = confirmPasswordInput.value.replaceAll(/./g, "*");
+      // confirmPasswordInput.value = convertedValue;
+      // var password = document.getElementById("floatingPassword");
+      // password.addEventListener("input", function (e) {
+      //   let hiddenPassword = password.replace(/./g, "*");
+      //   console.log(hiddenPassword);
+      // }); // 输出：
+    </script>
+    <script>
+      const phonenumberInput = document.getElementById("phonenumber");
+      const passwordInput = document.getElementById("floatingPassword");
+      const btnbg = document.getElementById("submit");
+      passwordInput.addEventListener("input", function (e) {
+        if (
+          phonenumberInput.value.length > 0 &&
+          passwordInput.value.length > 0
+        ) {
+          btnbg.classList.remove("btn-danger");
+          btnbg.classList.add("bg-btn-primay");
+        }
+        if (
+          (phonenumberInput.value.length === 0) |
+          (passwordInput.value.length === 0)
+        ) {
+          btnbg.classList.remove("bg-btn-primay");
+          btnbg.classList.add("btn-danger");
+        }
+      });
+    </script>
+    <script>
+      // eye
+      var checkEye = document.getElementById("checkEye");
+      var floatingPassword = document.getElementById("floatingPassword");
+      checkEye.addEventListener("click", function (e) {
+        if (e.target.classList.contains("bi-eye-slash")) {
+          //換class 病患 type
+          e.target.classList.remove("bi-eye-slash");
+          e.target.classList.add("bi-eye");
+          floatingPassword.setAttribute("type", "text");
+        } else {
+          floatingPassword.setAttribute("type", "password");
+          e.target.classList.remove("bi-eye");
+          e.target.classList.add("bi-eye-slash");
+        }
+      });
+      $("#register_form")
+        .validator()
+        .on("submit", function (e) {
+          if (e.isDefaultPrevented()) {
+            // 未驗證通過 則不處理
+            return;
+          } else {
+            // 通过后，送出表单
+            window.location.href = "../index";
+          }
+          e.preventDefault(); // 防止原始 form 提交表单
+        });
+    </script>
   </body>
 </html>
