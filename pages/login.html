@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="uname"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="uname"
+            placeholder="Enter username"
+            name="uname"
+            required
+          />
+          <div class="valid-feedback">验证成功！</div>
+          <div class="invalid-feedback">请输入用户名！</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd"></label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+            required
+          />
+          <div class="valid-feedback">验证成功！</div>
+          <div class="invalid-feedback">请输入密码！</div>
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+      </form>
+
+      <form
+        class="needs-validation"
+        novalidate
+        id="register_form"
+        role="form"
+        data-toggle="validator"
+      >
+        <div class="input-group mb-6 w-100">
+          <button
+            class="btn text-primary-300 btn-border border-end-0 pe-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span
+              >+886
+              <span
+                class="material-icons-outlined align-bottom pe-3 border-end text-primary-300 border-primary-300"
+              >
+                arrow_drop_down
+              </span></span
+            >
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">+886</a></li>
+            <li><a class="dropdown-item" href="#">+86</a></li>
+            <li>
+              <a class="dropdown-item" href="#">+123</a>
+            </li>
+            <li><a class="dropdown-item" href="#">+456</a></li>
+          </ul>
+          <input
+            type="text"
+            class="form-control btn-border border-start-0 text-primary-100 ps-4 shadow-none"
+            placeholder="請輸入手機號碼"
+            aria-label="Text input with dropdown button"
+            required
+          />
+          <!-- <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">請輸入手機號碼</div> -->
+        </div>
+        <div class="position-relative mb-391">
+          <input
+            type="password"
+            class="form-control btn-border text-primary-100 shadow-none"
+            placeholder="請輸入密碼"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            required
+          />
+          <!-- <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">請輸入密碼</div> -->
+          <img
+            src="/assets/images/08-icon/State=Default, icon=eyeoff.svg"
+            alt="eyeoff"
+            class="position-absolute top-50 end-0 translate-middle-y me-5"
+          />
+        </div>
+        <div class="">
+          <a href=""
+            ><button
+              type="button submit"
+              class="text-primary-50 text-center w-100 rounded-pill py-3 mb-6 shadow-sm btn-disabled-bg-color"
+            >
+              繼續
+            </button></a
+          >
+        </div>
+        <a href=""
+          ><input
+            type="submit"
+            value="繼續"
+            class="btn btn-danger btn-block text-primary-50 text-center w-100 rounded-pill py-3 mb-6 shadow-sm"
+        /></a>
+      </form>
+    </div>
+
+    <script>
+      // 如果验证不通过禁止提交表单
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // 获取表单验证样式
+            var forms = document.getElementsByClassName("needs-validation");
+            // 循环并禁止提交
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
 </html>
