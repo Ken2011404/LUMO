@@ -45,6 +45,9 @@
     mask-composite: exclude, add;
   }
 }
+.list-name {
+  font-family: "Inter", sans-serif;
+}
 
 .list-msg {
   color: #ff4edf;
@@ -59,10 +62,18 @@
   }
 }
 .friend-msg {
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 12px;
   color: #868686;
   font-weight: 500;
 }
+.friend-time {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 10px;
+  color: #fff2fc;
+  font-weight: 500;
+}
+
 .msg-number {
   background: linear-gradient(to right, #957cf9, #f70be4);
   font-size: 10px;
