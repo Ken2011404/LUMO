@@ -1,0 +1,42 @@
+.was-validated .form-control:invalid,
+.form-control.is-invalidl {
+  background-image: none;
+}
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  background-image: none;
+}
+
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
+  color: #fff2fc;
+  pointer-events: none;
+  background-color: #c1bcbc66;
+  border: 0px;
+  border-color: var(--bs-btn-disabled-border-color);
+  opacity: var(--bs-btn-disabled-opacity);
+}
+
+.btn-danger {
+  position: relative;
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 24px;
+    background-image: linear-gradient(to right, #ff5ddc, #ba96ea);
+    background-origin: border-box;
+    // mask-image: linear-gradient(white, white), linear-gradient(white, white);
+    mask-clip: padding-box, border-box;
+    mask-composite: exclude, add;
+  }
+}
+.text-right {
+  text-indent: 88px;
+}

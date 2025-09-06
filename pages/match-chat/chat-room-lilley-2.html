@@ -11,12 +11,13 @@
         <section class="px-5 py-3 bg-header">
           <div class="d-flex justify-content-between align-items-center pt-47">
             <div class="d-flex align-items-center">
-              <button type="button" class="btn border-0">
-                <img
-                  src="../../assets/images/08-icon/State=Default, icon=left.svg"
-                  alt=""
-                />
-              </button>
+              <a href="chat-room-list.html"
+                ><button type="button" class="btn border-0">
+                  <img
+                    src="../../assets/images/08-icon/State=Default, icon=left.svg"
+                    alt=""
+                  /></button
+              ></a>
               <div class="me-5">
                 <img
                   src="../../assets/images/06-Fast match/1x/chat image.png"
@@ -30,18 +31,18 @@
               </div>
             </div>
             <div class="d-flex">
-              <button type="button" class="btn border-0 me-5">
+              <a href="" class="me-5">
                 <img
-                  src="/assets/images/08-icon/State=Default, icon=phone.svg"
+                  src="/assets/images/08-icon/State=Disable, icon=phone.svg"
                   alt=""
                 />
-              </button>
-              <button type="button" class="btn border-0">
+              </a>
+              <a href="">
                 <img
                   src="/assets/images/08-icon/State=Default, icon=more.svg"
                   alt=""
                 />
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -56,7 +57,7 @@
                     src="/assets/images/08-icon/State=Default, icon=info.svg"
                     alt="" /></span
               ></span>
-              <span>0%</span>
+              <span>50%</span>
             </div>
             <div class="mb-4">
               <img
@@ -91,49 +92,25 @@
               <span class="chat-dialog-box-left">你平常喜歡去咖啡館嗎？</span
               ><span class="chat-time ms-3">19:23</span>
             </div>
-            <div class="d-flex justify-content-end align-items-center mb-4">
+            <div class="d-flex justify-content-end align-items-center mb-153">
               <span class="chat-time me-3">19:23</span>
               <span class="chat-dialog-box-right">喜歡唷</span>
             </div>
-            <div class="d-flex justify-content-end align-items-center mb-4">
-              <span class="chat-time me-3">19:23</span>
-              <span class="chat-dialog-box-right pb-77"
-                >我有一些口袋名單，可以推薦給你</span
-              >
-            </div>
             <div class="nav-position w-100 px-5">
-              <div class="close-percent mb-18">
+              <div class="close-percent mb-18 ps-4">
                 <div class="d-flex align-items-center text-white mb-3">
                   <img
-                    src="../../assets/images/08-icon/State=Default, icon=full heart.svg"
+                    src="../../assets/images/08-icon/State=Default, icon=half heart.svg"
                     alt=""
-                    class="me-3 heart"
+                    class="heart"
                   />
-                  <div>
-                    <p>✨ 親近值：100%</p>
-                    <p>是否添加對方為好友，解鎖更多功能？</p>
+                  <div class="py-4">
+                    <p class="fw-bold">✨ 親近值：50%</p>
+                    <p>持續聊天，可添加對方為好友，解鎖更多功能</p>
                   </div>
                 </div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <a href="#" class="w-100 me-4">
-                    <button
-                      type="button"
-                      class="btn rounded-pill w-100 btn-talk"
-                    >
-                      再聊一下
-                    </button></a
-                  >
-                  <a href="chat-room-lilley-3.html" class="w-100"
-                    ><button
-                      type="button"
-                      class="btn rounded-pill w-100 border-0 btn-friend"
-                    >
-                      加為好友
-                    </button></a
-                  >
-                </div>
               </div>
-              <div class="nav-pills nav-bg py-3 px-5">
+              <div class="nav-pills nav-bg py-3 px-md-5">
                 <form action="">
                   <div class="d-flex align-items-center gap-3">
                     <button type="button" class="btn border-0 p-0">
@@ -150,18 +127,21 @@
                         class="opacity-50"
                       />
                     </button>
-                    <div>
+                    <div class="w-100">
                       <input
                         type="text"
-                        class="form-control bg-white rounded-pill text-black w-100"
+                        placeholder="傳送訊息..."
+                        class="chat-room-control rounded-pill w-100"
                       />
                     </div>
-                    <button type="button" class="btn border-0 p-0">
-                      <img
-                        src="../../assets/images/08-icon/State=Default, icon=send.svg"
-                        alt=""
-                      />
-                    </button>
+
+                    <a href="chat-room-lilley-3.html">
+                      <button type="button" class="btn border-0 p-0">
+                        <img
+                          src="../../assets/images/08-icon/State=Default, icon=send.svg"
+                          alt=""
+                        /></button
+                    ></a>
                   </div>
                 </form>
               </div>
