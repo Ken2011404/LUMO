@@ -1,3 +1,14 @@
 .bg-lg-bg{
-    background: $lg-bg;
+    background: linear-gradient(#763296, #291b53);
+    background-size: cover;
+    background-color: #291b53;
+    //height: 100dvh;
 }
+@media (min-width: 576px) {
+    
+    .py-mockup {
+      padding-top: 47px;
+      padding-bottom: 34px;
+    }
+}
+
