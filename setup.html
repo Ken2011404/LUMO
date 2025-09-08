@@ -6,30 +6,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
 
     <title>設定</title>
-  <script type="module" crossorigin src="/LUMO/assets/main-BOjEXqs_.js"></script>
-  <link rel="stylesheet" crossorigin href="/LUMO/assets/main-Dv2Ngw_o.css">
+  <script type="module" crossorigin src="/LUMO/assets/main-DSWjRAWg.js"></script>
+  <link rel="stylesheet" crossorigin href="/LUMO/assets/main-CfsFTELN.css">
 </head>
-<body >
+<body class="">
     <div class="wrapper">
         <div class="app-wrapper">
-            <div class="pt-sm-9 bg-base bg-lg-bg d-flex flex-column justify-content-between ">
+            <div class="py-mockup bg-base bg-lg-bg ">
                 <header >
                     <div class="container">
                         <div class="d-flex justify-content-between py-3">
-                            <h1 class="h6">設定</h1>
+                            <h1 class="h6 text-spacing-8">設定</h1>
                             <a href="./index.html">
                                 <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6%2018L18%206M6%206L18%2018'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt=""> 
                             </a>
                         </div>
                     </div>
                 </header>
-                <main class="container flex-fill d-flex flex-column justify-content-evenly">
-                    <section>
-                        <h2 class="fs-6 fw-medium text-body-tertiary mb-3">交友篩選條件</h2>
+                <main class="container py-6">
+                    <section class="mb-6">
+                        <p class="fs-6 fw-medium text-body-tertiary mb-3">交友篩選條件</p>
                         <form action="" class="d-flex flex-column gap-5">
                             <div class="p-5 border-surface rounded-1">
-                                <div class="d-flex gap-3">
-                                    <p class="mb-3">顯示性別</p>
+                                <p class="mb-3 text-primary-100">顯示性別</p>
+                                <div class="d-flex gap-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="radioDefault" id="search-gender-1" checked>
                                         <label class="form-check-label" for="search-gender-1">
@@ -51,17 +51,18 @@
                                 </div>
                             </div>
                             <div class="p-5 border-surface rounded-1">
-                                <div class="mb-3">
-                                    <p >年齡</p>
+                                <div class="mb-3 d-flex justify-content-between">
+                                    <p class="text-primary-100">年齡</p>
+                                    <p class="age-value text-body-tertiary">20-30</p>
                                 </div>
                                 <div id="price-slider">
         
                                 </div>
                             </div>
                             <div class="p-5 border-surface rounded-1">
-                                <div class="mb-3 d-flex justify-content-between">
-                                    <label for="distance-range" class="form-label">最大距離範圍</label>
-                                    <output for="distance-range" id="rangeValue" aria-hidden="true"></output>
+                                <div class=" d-flex justify-content-between">
+                                    <label for="distance-range" class="form-label text-primary-100">最大距離範圍</label>
+                                    <output class="distance-value text-body-tertiary" for="distance-range" id="distance-Value" aria-hidden="true">100km</output>
                                 </div>
                                 <div class="">
                                     <input type="range" class="form-range range-setup" min="0" max="100" value="50" id="distance-range">
@@ -71,11 +72,11 @@
                         </form>
                             
                     </section>
-                    <section class="">
+                    <section class="" style="padding-bottom: 5px;">
                         <h2 class="fs-6 fw-medium text-body-tertiary mb-3">應用設置</h2>
-                        <ul  class="d-flex flex-column gap-5">
+                        <ul  class="d-flex flex-column gap-5 m-0">
                             <li class="border-surface rounded-1">
-                                <a href="#" class="d-block py-3 px-4 ">
+                                <a href="#" class="d-block py-3 px-5 ">
                                     <div class="d-flex justify-content-between">
                                         <span class="link-primary-100">個人資料</span>
                                         <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2019L15%2012L8%205'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
@@ -83,7 +84,7 @@
                                 </a>
                             </li>
                             <li class="border-surface rounded-1">
-                                <a href="#" class="d-block py-3 px-4 ">
+                                <a href="#" class="d-block py-3 px-5 ">
                                     <div class="d-flex justify-content-between">
                                         <span class="link-primary-100">在社群顯示的資料</span>
                                         <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2019L15%2012L8%205'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
@@ -91,7 +92,7 @@
                                 </a>
                             </li>
                             <li class="border-surface rounded-1">
-                                <a href="./test/psychological-test-main.html" class="d-block py-3 px-4 ">
+                                <a href="./test/psychological-test-main.html" class="d-block py-3 px-5 ">
                                     <div class="d-flex justify-content-between">
                                         <span class="link-primary-100">星球心理測驗</span>
                                         <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2019L15%2012L8%205'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
@@ -99,7 +100,7 @@
                                 </a>
                             </li>
                             <li class="border-surface rounded-1">
-                                <a href="#" class="d-block py-3 px-4 ">
+                                <a href="#" class="d-block py-3 px-5 ">
                                     <div class="d-flex justify-content-between">
                                         <span class="link-primary-100">修改密碼</span>
                                         <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2019L15%2012L8%205'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
@@ -108,10 +109,8 @@
                             </li>
                         </ul>
                     </section>
-                    
-                    
                 </main>
-                <footer class="container d-grid mb-6">
+                <footer class="container d-grid pb-6">
                     <a href="./welcome.html" class="btn-main rounded-pill">登出</a>
                 </footer>
         
