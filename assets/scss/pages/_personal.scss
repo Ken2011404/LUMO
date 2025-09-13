@@ -7,7 +7,7 @@
   background-attachment: scroll;
 }
 .bg-personal {
-  height: auto;
+  height: 812px;
   background-image: url("/assets/images/03-Introduction-character/1x/Introduction-bg.png");
   background-position: top;
   background-size: cover;
@@ -92,6 +92,18 @@
 
 .img-bottom {
   transform: translate(-50%);
+  &-satrna {
+    bottom: -83px;
+  }
+  &-pluvia {
+    bottom: -143px;
+  }
+  &-verina {
+    bottom: -95px;
+  }
+  &-flamora {
+    bottom: -100.5px;
+  }
 }
 
 .img-section {
