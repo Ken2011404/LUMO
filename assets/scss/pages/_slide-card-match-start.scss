@@ -12,6 +12,10 @@
   letter-spacing: 0%;
 }
 
+.mb-103 {
+  margin-bottom: 103px;
+}
+
 .slide-card-border {
   position: relative;
   border-radius: 24px; /* 想要的圓角 */
@@ -26,7 +30,7 @@
 
 .slide-card-tag {
   background: rgba(56, 31, 103, 0.8);
-  padding: 15px;
+  padding: 16px;
   border-radius: 24px;
   li {
     background: rgba(0, 0, 0, 0.35);
@@ -119,8 +123,7 @@ input::placeholder {
 
 .close-hit {
   .modal-dialog {
-    width: 375px;
-    padding: 44px;
+    width: 278px;
   }
   .modal-content {
     background-color: transparent;
