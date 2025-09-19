@@ -17,7 +17,11 @@ fieldset:disabled .btn {
   border-color: var(--bs-btn-disabled-border-color);
   opacity: var(--bs-btn-disabled-opacity);
 }
-
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #542f99;
+  background-color: #ff99ea;
+}
 .btn-danger {
   position: relative;
   padding-top: 14.5px;
